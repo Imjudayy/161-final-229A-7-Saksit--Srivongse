@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Circle : Shape
 {
-   private float radius;
+   private float radius = 2f;
+    private float PI = 3.14f;
     private void Start()
     {
         Init();
@@ -15,12 +16,13 @@ public class Circle : Shape
 
     public override float CalculateArea()
     {
-        Debug.Log($"");
+        Debug.Log($"Circlearea: {PI} * {radius} * {radius}");
     }
 
     public override void Resize()
     {
         
         Debug.Log("Circle is resized");
+        Debug.Log($"Circle resized :{radius}");
     }
 }

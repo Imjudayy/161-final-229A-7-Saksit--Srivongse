@@ -12,9 +12,9 @@ public abstract class Shape : MonoBehaviour
         Resize();
     }
 
-    public void Init(string shapeName, string shapName2)
+    public void Init()
     {
-          = shapeName
+         
     }
 
     public abstract float CalculateArea();
